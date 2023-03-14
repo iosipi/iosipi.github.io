@@ -433,7 +433,8 @@ function getFavorites() {
 function addFavorite(index) {
     const favorites = getFavorites();
 
-    const newList = favorites.find(item => item === index) ? favorites.filter(item => item !== index) : [...favorites, index];
+    console.log({favorites, index})
+    const newList = favorites.some(item => item === index) ? favorites.filter(item => item !== index) : [...favorites, index];
     localStorage.setItem('favorites', JSON.stringify(newList));
     setProducts();
 }
@@ -466,7 +467,7 @@ function getaddItemToCart() {
 function addItemToCart(index) {
     const cart = getaddItemToCart();
 
-    const newList = cart.find(item => item === index) ? cart.filter(item => item !== index) : [...cart, index];
+    const newList = cart.some(item => item === index) ? cart.filter(item => item !== index) : [...cart, index];
     localStorage.setItem('cart', JSON.stringify(newList));
     setProducts();
 }
@@ -486,7 +487,7 @@ function setProduct(index) {
 <div class="content">
     <h3>${produs.name}</h3>
     ${produs.description.map(item => `<p>${item}</p>`).join('')}
-    
+   <butt> back
 </div>
 
 </div>
