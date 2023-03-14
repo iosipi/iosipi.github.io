@@ -411,6 +411,7 @@ const produse = [
             `Gustul ciocolatelor ce te duc cu gândul la zilele de vară.Vișinele uscate cu multă pricepere,învelite într-un strat de ciocolată cremoasă neagră,creează special pentru voi,un gust delicios,calitativ și sănătos.La producere se utilizează doar ingrediente naturale, fără conservanți sau alte adaosuri.Atât producerea cât și ambalarea se face manual`,
             'Cantitate:100g',
         ],
+        back: `Inapoi`,
         pret: '30.00',
     },
 ];
@@ -487,10 +488,8 @@ function setProduct(index) {
 <div class="content">
     <h3>${produs.name}</h3>
     ${produs.description.map(item => `<p>${item}</p>`).join('')}
-</div>
-
-<div class="content">
     <a href="./produse.html?id=${produse}" class="back">Înapoi</a>
+    <a href="./produse.html?id=${produse}" class="bye">Cumpara acum</a>
 </div>
 `;
 }

@@ -132,7 +132,7 @@ home {
 .header .search-form {
     position: absolute;
     top: 115%;
-    right: 7%;
+    right: 5%;
     background: #fff;
     width: 50rem;
     height: 5rem;
@@ -140,6 +140,7 @@ home {
     align-items: center;
     transform: scaleY(0);
     transform-origin: top;
+    border: ridge;
 }
 
 .header .search-form.active {
@@ -477,19 +478,23 @@ home {
 }
 
 .footer .name {
-    font-size: 16px;
+    font-size: 2rem;
     color: #fff;
     font-weight: lighter;
-    padding: 1.5rem;
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.footer .contact1 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: lighter;
-    padding: 1.5rem;
-    text-align: right;
+.footer .container .row .footer-col ul{
+    list-style: none;
+}
+
+.footer .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .product .row {
