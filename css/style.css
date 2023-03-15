@@ -548,7 +548,11 @@ home {
     line-height: 1.8;
 }
 
-
+.product .row .content .back{
+    font-size: 2rem;
+    border: ridge;
+    color: var(--black);
+}
 
 
 
