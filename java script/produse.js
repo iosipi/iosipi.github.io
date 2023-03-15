@@ -488,7 +488,6 @@ function setProduct(index) {
     <h3>${produs.name}</h3>
     ${produs.description.map(item => `<p>${item}</p>`).join('')}
     <a href="./produse.html?id=${produse}" class="back">Înapoi</a>
-    <a href="./produse.html?id=${produse}" class="bye">Cumpara acum</a>
 </div>
 `;
 }
