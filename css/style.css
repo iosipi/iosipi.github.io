@@ -30,29 +30,12 @@ html {
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar {
-    width: .8rem;
-}
-
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-html::-webkit-scrollbar-thumb {
-    background: #fff;
-    border-radius: 5rem;
-}
-
 body {
     background: var(--bg);
 }
 
 section {
     padding: 2rem 7%;
-}
-
-home {
-    padding: 2rem 36%;
 }
 
 .heading {
@@ -183,9 +166,10 @@ home {
     display: flex;
     align-items: center;
     background: url(../imagini/acasa.jpg) no-repeat;
-    flex: 1 1 45rem;
+   
     background-size: cover;
     background-position: center;
+    padding: 2rem 36%;
 }
 
 .home .content {
@@ -576,7 +560,7 @@ home {
 
 
 
-/* media queries */
+
 @media (max-width:991px) {
 
     html {
@@ -650,7 +634,7 @@ home {
     }
 
     .home .content h3 {
-        font-size: 2rem;
+        font-size: 4.5rem;
     }
 
     .home .content p {
