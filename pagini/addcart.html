@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Produsele Rifero sunt ciocolate unici cu o mulțime de produse naturale care sunt benefice pentru sănătate.
+    Consumatorii produselor „Rifero” pot savura cele mai aromate fructe, nuci și semințe învelite cu drag in ciocolată fină, asortimenul bomboanelor este foarte mare care te lasă mulțumit și cu o bună dispoziție.">
+    <meta name="keywords"
+        content="rifero,ciocolate,seminte,alune,boabe de cafea,fructe uscate,bomboane,halvita,cocos,zambet,dulciuri,delicii">
+    <title>Produse</title>
+
+    <link rel="shortcut icon" href="../imagini/Rifero-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../css/addcart.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbarone flex">
+        <div class="left flex">
+            <i>Rifero</i>
+        </div>
+        <div class="right flex">
+            <div class="email">
+                <a href="mailto:info@rifero.md" class="fa fa-envelope"> info@rifero.md</a>
+            </div>
+            <div class="call">
+                <a href="tel:+373 (69) 313800" class="fa fa-phone-alt"> +373 (69) 313800</a>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+
+        <header class="header">
+
+            <a href="../index.html" class="logo">
+                <img src="../imagini/Rifero-logo.png" alt="">
+            </a>
+
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="../index.html">Acasă</a>
+                    </li>
+                    <li>
+                        <a href="../pagini/despre.html">Despre</a>
+                    </li>
+                    <li>
+                        <a href="../pagini/produse.html" class="active">Produse</a>
+                    </li>
+                    <li>
+                        <a href="../pagini/recenzii.html">Recenzii</a>
+                    </li>
+                    <li>
+                        <a href="../pagini/contacte.html">Contacte</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <a href="../pagini/addcart.html"><i class='bx bx-shopping-bag add-cart' id="cart-btn"></i></a>
+            </div>
+
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="caută aici...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+
+        </header>
+
+        <section class="products" id="products">
+
+            <h1 class="heading"> coșul <span>tău</span> </h1>
+
+            <div id="lista" class="box-container">
+
+
+            </div>
+
+        </section>
+
+        <div class="container">
+            <div class="menu">
+                <div class="logo">
+
+                </div>
+
+            </div>
+            <div class="center">
+
+
+                <h2>Produsele</h2>
+                <div class="list">
+                    <div class="item" data-key="1">
+                        <div class="img">
+                            <img src="../imagini/BoSStar100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">BoSStar</div>
+                            <div class="des">
+                                100g
+                            </div>
+
+                            <div class="price">28 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add" onclick="adaugaInCos(1)">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(1)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="2">
+                        <div class="img">
+                            <img src="../imagini/ChocoNuts100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">ChocoNuts</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">35 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add" onclick="adaugaInCos(2)">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(2)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="3">
+                        <div class="img">
+                            <img src="../imagini/Cleopatra100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Cleopatra</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">22 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(3)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="4">
+                        <div class="img">
+                            <img src="../imagini/AraKiss135g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">AraKiss</div>
+                            <div class="des">
+                                135g
+                            </div>
+                            <div class="price">28 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(4)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="item" data-key="5">
+                        <div class="img">
+                            <img src="../imagini/BonBon200g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">BonBon</div>
+                            <div class="des">
+                                200g
+                            </div>
+                            <div class="price">45 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(5)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="6">
+                        <div class="img">
+                            <img src="../imagini/Flori115g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Flori</div>
+                            <div class="des">
+                                115g
+                            </div>
+                            <div class="price">30 MDL </div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(6)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="7">
+                        <div class="img">
+                            <img src="../imagini/CaiseInCiocolataAlba200g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Caise în ciocolată albă</div>
+                            <div class="des">
+                                200g
+                            </div>
+                            <div class="price">70 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(7)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="8">
+                        <div class="img">
+                            <img src="../imagini/CaiseCuMigdaleInCiocolataAlba200g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Caise cu migdală în ciocolată albă</div>
+                            <div class="des">
+                                200g
+                            </div>
+                            <div class="price">75 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(8)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="9">
+                        <div class="img">
+                            <img src="../imagini/CaiseInCiocolata250g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Caise în ciocolată</div>
+                            <div class="des">
+                                250g
+                            </div>
+                            <div class="price">75 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(9)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="10">
+                        <div class="img">
+                            <img src="../imagini/CurmaleCuMigdaleInCiocolata200g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Curmale cu migdale în ciocolată</div>
+                            <div class="des">
+                                200g
+                            </div>
+                            <div class="price">50 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(10)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+
+                    <div class="item" data-key="11">
+                        <div class="img">
+                            <img src="../imagini/GalbenaGutuie100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Galbenă Gutuie</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">28 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(11)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="12">
+                        <div class="img">
+                            <img src="../imagini/GutuieInCiocolataAlba100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Gutuie în ciocolată albă</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">35 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(12)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="13">
+                        <div class="img">
+                            <img src="../imagini/GustulMoldovei450g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Gustul Moldovei</div>
+                            <div class="des">
+                                450g
+                            </div>
+                            <div class="price">99 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(13)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="14">
+                        <div class="img">
+                            <img src="../imagini/Halvita100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Halviță</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">20 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(14)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="15">
+                        <div class="img">
+                            <img src="../imagini/Iepuras106g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Iepuraș</div>
+                            <div class="des">
+                                106g
+                            </div>
+                            <div class="price">30 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(15)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="16">
+                        <div class="img">
+                            <img src="../imagini/Kedru100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Kedru</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">85 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(16)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="17">
+                        <div class="img">
+                            <img src="../imagini/MagicBox450g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Magic Box</div>
+                            <div class="des">
+                                450g
+                            </div>
+                            <div class="price">109 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(17)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="18">
+                        <div class="img">
+                            <img src="../imagini/Imperatrice235g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Imperatrice</div>
+                            <div class="des">
+                                235g
+                            </div>
+                            <div class="price">85 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(18)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="19">
+                        <div class="img">
+                            <img src="../imagini/Premium220g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Premium</div>
+                            <div class="des">
+                                220g
+                            </div>
+                            <div class="price">85 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(19)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="20">
+                        <div class="img">
+                            <img src="../imagini/Regale260g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Regale</div>
+                            <div class="des">
+                                260g
+                            </div>
+                            <div class="price">85 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(20)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="21">
+                        <div class="img">
+                            <img src="../imagini/Nobil230g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Nobil</div>
+                            <div class="des">
+                                230g
+                            </div>
+                            <div class="price">85 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(21)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="22">
+                        <div class="img">
+                            <img src="../imagini/Kozinaki150g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Kozinaki</div>
+                            <div class="des">
+                                150g
+                            </div>
+                            <div class="price">22 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(22)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="23">
+                        <div class="img">
+                            <img src="../imagini/MiezDeNucaIntegral150g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Miez de nucă integral</div>
+                            <div class="des">
+                                150g
+                            </div>
+                            <div class="price">42 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(23)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="24">
+                        <div class="img">
+                            <img src="../imagini/PruneCuNuca200g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Prune cu nucă</div>
+                            <div class="des">
+                                200g
+                            </div>
+                            <div class="price">35 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(24)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="25">
+                        <div class="img">
+                            <img src="../imagini/Prune200g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Prune uscate fără sâmburi</div>
+                            <div class="des">
+                                200g
+                            </div>
+                            <div class="price">25 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(25)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="26">
+                        <div class="img">
+                            <img src="../imagini/MereInCiocolataAlba150g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Mere în ciocolată albă</div>
+                            <div class="des">
+                                150g
+                            </div>
+                            <div class="price">52 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(26)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="27">
+                        <div class="img">
+                            <img src="../imagini/MereInCiocolata150g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Mere în ciocolată</div>
+                            <div class="des">
+                                150g
+                            </div>
+                            <div class="price">42 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(27)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="28">
+                        <div class="img">
+                            <img src="../imagini/Merit100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Merit</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">28 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(28)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="29">
+                        <div class="img">
+                            <img src="../imagini/Piersici100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Piersici</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">28 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(29)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="30">
+                        <div class="img">
+                            <img src="../imagini/PerleNegre230g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Perle Negre</div>
+                            <div class="des">
+                                230g
+                            </div>
+                            <div class="price">44 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(30)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="31">
+                        <div class="img">
+                            <img src="../imagini/PruneCuNuca230g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Rifero</div>
+                            <div class="des">
+                                230g
+                            </div>
+                            <div class="price">50 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(31)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="32">
+                        <div class="img">
+                            <img src="../imagini/PerleNegre500g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Perle Negre</div>
+                            <div class="des">
+                                500g
+                            </div>
+                            <div class="price">88 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(32)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="33">
+                        <div class="img">
+                            <img src="../imagini/PruneCuNuca500g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Rifero</div>
+                            <div class="des">
+                                500g
+                            </div>
+                            <div class="price">99 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(33)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="34">
+                        <div class="img">
+                            <img src="../imagini/RachiteleInCiocolata100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Răchițele în ciocolată</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">30 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(34)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="35">
+                        <div class="img">
+                            <img src="../imagini/RachiteleInCiocolataAlba100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Răchițele în ciocolată albă</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">35 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(35)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="36">
+                        <div class="img">
+                            <img src="../imagini/Zambet100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Zâmbet</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">22 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(36)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="37">
+                        <div class="img">
+                            <img src="../imagini/Sementia100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Semenția</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">20 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(37)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="38">
+                        <div class="img">
+                            <img src="../imagini/StruguriDeMoldova.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Struguri de Moldova</div>
+                            <div class="des">
+                                136g
+                            </div>
+                            <div class="price">30 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(38)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="39">
+                        <div class="img">
+                            <img src="../imagini/SmochineInCiocolata200g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Smochine în ciocolată</div>
+                            <div class="des">
+                                200g
+                            </div>
+                            <div class="price">55 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(39)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="item" data-key="40">
+                        <div class="img">
+                            <img src="../imagini/Visina100g.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Vișini</div>
+                            <div class="des">
+                                100g
+                            </div>
+                            <div class="price">30 MDL</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Adaugă în Coș</button>
+                            <button class="remove" onclick="Remove(40)"><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="cart">
+                <div class="name">Produsele din Coș</div>
+                <div class="listCart">
+
+                </div>
+
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0 lei</div>
+
+                </div>
+
+
+            </div>
+            <div class="btn-1">
+                <a href="../pagini/cumpar.html" class="btn">Cumpără!</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+
+        <div class="links">
+            <a href="../index.html">Acasă</a>
+            <a href="./despre.html">Despre</a>
+            <a href="./produse.html">Produse</a>
+            <a href="./recenzii.html">Recenzii</a>
+            <a href="./contacte.html">Contacte</a>
+        </div>
+
+        <div class="share">
+            <a href="https://instagram.com/rifero.md?igshid=YmMyMTA2M2Y=" target="_blank"
+                class="fab fa-instagram"></a>
+            <a href="https://www.facebook.com/Rifero.md?mibextid=ZbWKwL" target="_blank"
+                class="fab fa-facebook-f"></a>
+        </div>
+
+        <div class="container8">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Creat de:</h4>
+                    <ul>
+                        <li>Iosip Irina</li>
+                        <li>Vutcărău Felicia</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contactele noastre:</h4>
+                    <ul>
+                        <li>+373 (69) 313800</li>
+                        <li>+373 (69) 611502</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Gmail:</h4>
+                    <ul>
+                        <li>info@rifero.md</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        &copy; <h5>2023 Rifero. Toate drepturile sunt rezervate</h5>
+    </div>
+
+
+
+    <script src="../java script/addcart.js"></script>
+    <script src="../java script/navbar.js"></script>
+    <script src="../java script/script.js"></script>
+</body>
+
+</html>

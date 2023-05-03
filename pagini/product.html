@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Produsele Rifero sunt ciocolate unici cu o mulțime de produse naturale care sunt benefice pentru sănătate.
+    Consumatorii produselor „Rifero” pot savura cele mai aromate fructe, nuci și semințe învelite cu drag in ciocolată fină, asortimenul bomboanelor este foarte mare care te lasă mulțumit și cu o bună dispoziție.">
+    <meta name="keywords"
+        content="rifero,ciocolate,seminte,alune,boabe de cafea,fructe uscate,bomboane,halvita,cocos,zambet,dulciuri,delicii">
     <title>Produs</title>
 
+    <link rel="shortcut icon" href="../imagini/Rifero-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -16,32 +22,64 @@
 
 <body>
 
-    <header class="header">
-
-        <a href="../index.html" class="logo">
-            <img src="../imagini/Rifero-logo.png" alt="">
-        </a>
-
-        <nav class="navbar">
-            <a href="../index.html">Acasa</a>
-            <a href="./despre.html">Despre</a>
-            <a href="./produse.html" class="active">Produse</a>
-            <a href="./recenzii.html">Recenzii</a>
-            <a href="./contacte.html">Contacte</a>
-        </nav>
-
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <i class='bx bx-shopping-bag' id="cart-btn"></i>
-            <div class="fas fa-bars" id="menu-btn"></div>
+    <nav class="navbarone flex">
+        <div class="left flex">
+            <i>Rifero</i>
         </div>
-
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="caută aici...">
-            <label for="search-box" class="fas fa-search"></label>
+        <div class="right flex">
+            <div class="email">
+                <a href="mailto:info@rifero.md" class="fa fa-envelope"> info@rifero.md</a>
+            </div>
+            <div class="call">
+                <a href="tel:+373 (69) 313800" class="fa fa-phone-alt"> +373 (69) 313800</a>
+            </div>
         </div>
+    </nav>
+    <div class="wrapper">
 
-    </header>
+        <header class="header">
+
+            <a href="../index.html" class="logo">
+                <img src="../imagini/Rifero-logo.png" alt="">
+            </a>
+
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="../index.html">Acasă</a>
+                    </li>
+                    <li>
+                        <a href="../pagini/despre.html">Despre</a>
+                    </li>
+                    <li>
+                        <a href="../pagini/produse.html" class="active">Produse</a>
+                    </li>
+                    <li>
+                        <a href="../pagini/recenzii.html">Recenzii</a>
+                    </li>
+                    <li>
+                        <a href="../pagini/contacte.html">Contacte</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <a href="../pagini/addcart.html"><i class='bx bx-shopping-bag add-cart' id="cart-btn"></i></a>
+            </div>
+
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="caută aici...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+
+        </header>
     <div class="wrapper">
 
         <section class="product" id="product">
@@ -49,7 +87,7 @@
             <h1 class="heading"> produsele <span>noastre</span> </h1>
 
             <div id="lista" class="box-container">
-
+                
             </div>
 
         </section>
@@ -57,7 +95,7 @@
         <section class="footer">
 
             <div class="links">
-                <a href="../index.html">Acasa</a>
+                <a href="../index.html">Acasă</a>
                 <a href="./despre.html">Despre</a>
                 <a href="./produse.html">Produse</a>
                 <a href="./recenzii.html">Recenzii</a>
@@ -71,13 +109,39 @@
                     class="fab fa-facebook-f"></a>
             </div>
 
-            <div class="name"> creat de Iosip Irina și Vutcărău Felicia</div>
-            <div class="contact1">Contactele noastre: +373 (69) 313800</div>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Creat de:</h4>
+                        <ul>
+                            <li>Iosip Irina</li>
+                            <li>Vutcărău Felicia</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contactele noastre:</h4>
+                        <ul>
+                            <li>+373 (69) 313800</li>
+                            <li>+373 (69) 611502</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Gmail:</h4>
+                        <ul>
+                            <li>info@rifero.md</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <div class="copyright">
+            &copy; <h5>2023 Rifero. Toate drepturile sunt rezervate</h5>
+        </div>
 
 
         <script src="../java script/script.js"></script>
-
+        <script src="../java script/navbar.js"></script>
     </div>
 </body>
 
