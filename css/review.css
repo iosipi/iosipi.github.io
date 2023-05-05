@@ -65,7 +65,7 @@ input#rate-5:checked~label {
 }
 
 #rate-1:checked~form header1:before {
-    content: "Urăsc ";
+    content: "Dezacord";
 }
 
 #rate-2:checked~form header1:before {
